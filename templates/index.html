@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+
+    <title>Machine Learning Lab</title>
+</head>
+
+<body>
+    <nav style="width: 100%;" class="navbar navbar-dark bg-secondary">
+        <a class="  navbar-brand" href="#" style="margin-left: 25px;">
+             <img src="{{ url_for('static',filename = 'image/logo.png')  }}" 
+             class="img-responsive" style="margin-top:10px;style="width: auto; height: auto; min-width: 600px;min-height: 600px;">
+          
+              <li><a href="/aboutusnew">ABOUT US</a></li>
+            
+      </div>
+           
+        </a>
+        
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+
+                <img src="{{ url_for('static',filename = 'image/DanceBot-3-LG.gif')  }}" class="img-fluid"
+                    style="width: auto; height: auto; min-width: 400px;min-height: 400px;">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 " style=" padding: 30px;">
+                <h1>Machine Learning  Experiment Solutions</h1>
+                <br><br>
+                <h4 text-align: justify; style="color:blue;style="font-family:verdana;>It is  a web portal to understand basics of Machine Learning. It helps to understand Decision Tree, Support Vector Machine Classification, RandomForest, Naive_bayes,K-Nearest Neighours, and Artificial Neural Network. It allows user to predict accuracy on Churn_Modelling Dataset. It creates Machine Learning Model on Churn_Modelling dataset. It Extracts relevant features from datasets and also tranform Features. Artificial Neural Network model is also constructed.   </h4>
+              
+                
+                <br><br>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+            
+                    <div class="card">
+                        <img style="max-height: 300px;" src="{{ url_for('static',filename = 'image/svm.png')  }}"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Support Vector Machine Classification</h5>
+                            <p class="card-text">In SVM Classification, the data can be either linear or non-linear. There are different kernels that can be set in an SVM Classifier. For a linear dataset, we can set the kernel as 'linear'. On the other hand, for a non-linear dataset, there are two kernels, namely 'rbf' and 'polynomial'.</p>
+            
+                            <a href="/svm"><button type="button" class="btn btn-outline-primary">Explore Support Vector Machine Classification
+                                    &#9655;</button></a>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
+             <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 300px;"
+                            src="{{ url_for('static',filename = 'image/gnb.jpg')  }}"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Naive Bayes Classification</h5>
+                            <p class="card-text">Naive Bayes is a classification algorithm for binary (two-class) and multi-class classification problems. The technique is easiest to understand when described using binary or categorical input values.</p>
+
+                            <a href="/gnb"> <button type="button" class="btn btn-outline-primary">Explore Naive Bayes Classification
+                                    &#9655;</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 300px;"
+                            src="{{ url_for('static',filename = 'image/decisiontree.png')  }}"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Decision Tree Classification</h5>
+                            <p class="card-text">A decision tree is a flowchart-like structure in which each internal node represents a "test" on an attribute (e.g. whether a coin flip comes up heads or tails), each branch represents the outcome of the test, and each leaf node represents a class label (decision taken after computing all attributes).
+</p>
+
+                            <a href="/dt"> <button type="button" class="btn btn-outline-primary">Explore Decision Tree Classification
+                                    &#9655;</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 300px;"
+                            src="{{ url_for('static',filename = 'image/knn.png')  }}"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">K Nearest Neighours</h5>
+                            <p class="card-text">In statistics, the k-nearest neighbors algorithm is a non-parametric supervised learning method first developed by Evelyn Fix and Joseph Hodges in 1951, and later expanded by Thomas Cover. It is used for classification and regression. In both cases, the input consists of the k closest training examples in a data set..</p>
+
+                            <a href="/knn"><button type="button" class="btn btn-outline-primary">Explore K Nearest Neighours &#9655;</button></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 300px;"
+                            src="{{ url_for('static',filename = 'image/randomforest.png')  }}"
+                            class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Random Forest Classificaton</h5>
+                                <p class="card-text">The random forest is a classification algorithm consisting of many decisions trees. It uses bagging and feature randomness when building each individual tree to try to create an uncorrelated forest of trees whose prediction by committee is more accurate than that of any individual tree.</p>
+
+                            <a href="/random"><button type="button" class="btn btn-outline-primary">Explore Random Forest Classifier &#9655;</button></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+       
+       <div class="col-xs-12 col-md-4">
+                <div class="card mb-3">
+
+                    <div class="card">
+                        <img style="max-height: 300px;"
+                            src="{{ url_for('static',filename = 'image/ann.jpg')  }}"
+                            class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Artificial Neural Network</h5>
+                                <p class="card-text">An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives signals then processes them and can signal neurons connected to it. </p>
+
+                            <a href="/ann"><button type="button" class="btn btn-outline-primary">Explore Artificial Neural Network &#9655;</button></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="fixed-bottom ">
+        <div class="bg-secondary " style="min-height: 40px;">
+
+            <marquee style="color:#fff; margin-top: 7px;">
+                <h9>Developed by Kishor Kumar</h9>
+            </marquee>
+        </div>
+    </div>
+    <!-- change later-->
+    <script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+</body>
+
+</html>
